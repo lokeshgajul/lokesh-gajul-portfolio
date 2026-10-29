@@ -7,6 +7,7 @@ import type {
 import nourishnet from "../assets/nourishnet.png";
 import exblore from "../assets/exblore.png";
 import textutils from "../assets/textutils.png";
+import newsblock from "../assets/newsblock.png";
 
 export interface SkillGroup {
   category: string;
@@ -120,6 +121,24 @@ export const PROJECTS_DATA: Project[] = [
     tech: ["React", "JavaScript", "HTML5", "CSS3"],
     liveUrl: "https://lokeshgajul.github.io/my-app/",
     githubUrl: "https://github.com/lokeshgajul/my-app",
+  },
+  {
+    id: "newsblock",
+    title: "NewsBlock",
+    subtitle: "Dynamic News Aggregation Platform",
+    description:
+      "A dynamic news aggregation website that fetches and displays real-time news from an external API across multiple topics and domains.",
+    category: "frontend",
+    categoryLabel: "Frontend",
+    isFlagship: false,
+    problem:
+      "Finding relevant news across different topics and domains often requires switching between multiple sources and websites.",
+    solution:
+      "A centralized news platform that fetches news through an API and organizes articles by topics and domains for quick discovery.",
+    image: newsblock,
+    tech: ["React", "JavaScript", "REST API", "HTML5", "CSS3"],
+    liveUrl: "https://news-block-website.vercel.app/",
+    githubUrl: "https://github.com/lokeshgajul/news-block-website",
   },
 ];
 
