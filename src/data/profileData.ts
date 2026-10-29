@@ -105,24 +105,6 @@ export const PROJECTS_DATA: Project[] = [
     githubUrl: "https://github.com/lokeshgajul/Exblore",
   },
   {
-    id: "textutils",
-    title: "TextUtils",
-    subtitle: "Real-time Text Utility Suite",
-    description:
-      "A lightweight client-side application for instant string manipulation, case conversion, whitespace cleaning, and reading metrics.",
-    category: "frontend",
-    categoryLabel: "Frontend",
-    isFlagship: false,
-    problem:
-      "Repetitive manual formatting tasks often done on ad-heavy websites that compromise user privacy.",
-    solution:
-      "100% client-side string transformations with instant clipboard support.",
-    image: textutils,
-    tech: ["React", "JavaScript", "HTML5", "CSS3"],
-    liveUrl: "https://lokeshgajul.github.io/my-app/",
-    githubUrl: "https://github.com/lokeshgajul/my-app",
-  },
-  {
     id: "newsblock",
     title: "NewsBlock",
     subtitle: "Dynamic News Aggregation Platform",
@@ -136,7 +118,7 @@ export const PROJECTS_DATA: Project[] = [
     solution:
       "A centralized news platform that fetches news through an API and organizes articles by topics and domains for quick discovery.",
     image: newsblock,
-    tech: ["React", "JavaScript", "REST API", "HTML5", "CSS3"],
+    tech: ["React", "JavaScript", "REST API", "Express.js", "Node.js"],
     liveUrl: "https://news-block-website.vercel.app/",
     githubUrl: "https://github.com/lokeshgajul/news-block-website",
   },
