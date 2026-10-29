@@ -25,7 +25,7 @@ const Timeline: React.FC<TimelineProps> = ({ title, items }) => {
 
             <div className="space-y-2">
               <span className="text-xs font-bold uppercase tracking-widest text-white/30">
-                {"period" in item ? item.period : item.score}
+                {"score" in item ? item.score : item.period}
               </span>
               <h4 className="text-xl font-bold">
                 {"role" in item ? item.role : item.degree}
