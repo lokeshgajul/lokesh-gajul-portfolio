@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>Lokesh Gajul | Full-Stack Developer & Software Engineer</title>
+    <meta
+      name="title"
+      content="Lokesh Gajul | Full-Stack Developer & Software Engineer"
+    />
+    <meta
+      name="description"
+      content="Portfolio of Lokesh Gajul — Full-Stack Developer & Software Engineer specializing in modern React, React Native, Node.js, and cloud backend engineering."
+    />
+    <meta
+      name="keywords"
+      content="Lokesh Gajul, Software Engineer, Full Stack Developer, React, React Native, Node.js, TypeScript, Portfolio, Web Development, Mobile Apps"
+    />
+    <meta name="author" content="Lokesh Gajul" />
+    <meta name="theme-color" content="#090d16" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lokeshgajul.netlify.app/" />
+    <meta
+      property="og:title"
+      content="Lokesh Gajul | Full-Stack Developer & Software Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Building fast, accessible, and resilient digital experiences from interface to infrastructure."
+    />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&auto=format&fit=crop&q=80"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://lokeshgajul.netlify.app/" />
+    <meta
+      property="twitter:title"
+      content="Lokesh Gajul | Full-Stack Developer & Software Engineer"
+    />
+    <meta
+      property="twitter:description"
+      content="Building fast, accessible, and resilient digital experiences from interface to infrastructure."
+    />
+    <meta
+      property="twitter:image"
+      content="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&auto=format&fit=crop&q=80"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>"
+    />
+
+    <!-- Google Fonts: Inter & Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Anti-FOUC inline script: sets the theme before the first paint -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("portfolio-theme");
+          var prefersDark = window.matchMedia(
+            "(prefers-color-scheme: dark)",
+          ).matches;
+          var theme =
+            stored === "light" || stored === "dark"
+              ? stored
+              : prefersDark
+                ? "dark"
+                : "light";
+          if (theme === "dark") {
+            document.documentElement.classList.add("dark");
+            document.documentElement.classList.remove("light");
+          } else {
+            document.documentElement.classList.remove("dark");
+            document.documentElement.classList.add("light");
+          }
+        } catch (e) {
+          document.documentElement.classList.add("dark");
+        }
+      })();
+    </script>
+
+    <!-- Tailwind CSS via CDN with customized configuration -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              bg: "var(--bg)",
+              surface: "var(--surface)",
+              surfaceCard: "var(--surface-card)",
+              surfaceHover: "var(--surface-hover)",
+              text: "var(--text)",
+              textSecondary: "var(--text-secondary)",
+              muted: "var(--muted)",
+              border: "var(--border)",
+              accent: "var(--accent)",
+              accentPurple: "var(--accent-purple)",
+            },
+            fontFamily: {
+              sans: ["Inter", "system-ui", "sans-serif"],
+              heading: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Custom CSS Design Tokens & Effects -->
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body class="selection:bg-blue-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="./src/main.tsx"></script>
+  </body>
+</html>
