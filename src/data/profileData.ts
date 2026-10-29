@@ -31,11 +31,6 @@ export const PROFILE_DATA: ProfileData = {
   resumeUrl: "#resume",
   stats: [
     { label: "Play Store Apps", value: "4+", sublabel: "Published" },
-    {
-      label: "Performance Gain",
-      value: "70%",
-      sublabel: "API & State Optimization",
-    },
     { label: "Technologies", value: "15+", sublabel: "In Production" },
     { label: "Academic Score", value: "88%+", sublabel: "Distinction" },
   ],
